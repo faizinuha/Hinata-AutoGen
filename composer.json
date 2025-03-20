@@ -2,6 +2,28 @@
     "name": "leo/hikari-autogen",
     "description": "Tools Easy Create File or Laravel",
     "type": "library",
+    "version": "v1.0.0",
+    "homepage": "https://github.com/faizinuha/Leoe-AutoGen.git",
+    "keywords": [
+        "laravel",
+        "autogen",
+        "file",
+        "create"
+    ],
+    "support": {
+        "issues": "https://github.com/faizinuha/Leoe-AutoGen/issues"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/faizinuha/Leoe-AutoGen.git",
+            "options": {
+                "no-api": true
+            }
+        }
+    ],
+    "prefer-stable": true,
+    "prefer-lowest": false,
     "license": "MIT",
     "autoload": {
         "psr-4": {
