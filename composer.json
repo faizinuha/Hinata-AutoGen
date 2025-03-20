@@ -27,7 +27,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Leo\\HikariAutogen\\": "src/"
+            "Hinata\\HikariAutogen\\": "src/"
         }
     },
     "authors": [
@@ -83,6 +83,13 @@
         "allow-plugins": {
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hinata\\HikariAutogen\\Providers\\ConsoleServiceProvider"
+            ]
         }
     }
 }
