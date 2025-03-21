@@ -10,4 +10,5 @@ return [
     'providers' => [
         Hinata\AutoGenerator\Providers\AutoGenServiceProvider::class,
     ],
+    // all codes
 ];

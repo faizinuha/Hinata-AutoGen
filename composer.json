@@ -3,7 +3,7 @@
     "description": "Tools Easy Create File or Laravel",
     "type": "library",
     "version": "v1.0.1",
-    "homepage": "https://github.com/faizinuha/Leoe-AutoGen.git",
+    "homepage": "https://github.com/faizinuha/Hinata-AutoGen",
     "keywords": [
         "laravel",
         "autogen",
@@ -11,12 +11,12 @@
         "create"
     ],
     "support": {
-        "issues": "https://github.com/faizinuha/Leoe-AutoGen/issues"
+        "issues": "https://github.com/faizinuha/Hinata-AutoGen/issues"
     },
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/faizinuha/Leoe-AutoGen.git",
+            "url": "https://github.com/faizinuha/Hinata-AutoGen",
             "options": {
                 "no-api": true
             }
@@ -52,7 +52,6 @@
         "squizlabs/php_codesniffer": "^3.0",
         "pestphp/pest": "^1.0"
     },
-    
     "scripts": {
         "test": [
             "phpunit"
