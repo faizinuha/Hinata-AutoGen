@@ -4,7 +4,7 @@ namespace Hinata\AutoGenerator\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Hinata\AutoGenerator\Commands\MakeAll;
-use function config_path; // Tambahkan ini
+use function config_path;
 
 class AutoGenServiceProvider extends ServiceProvider
 {
