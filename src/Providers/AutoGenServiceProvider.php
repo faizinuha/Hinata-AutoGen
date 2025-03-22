@@ -4,7 +4,7 @@ namespace Hinata\AutoGenerator\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Hinata\AutoGenerator\Commands\MakeAll;
-use function config_path;
+use Illuminate\Support\Facades\Config;
 
 class AutoGenServiceProvider extends ServiceProvider
 {
@@ -23,7 +23,7 @@ class AutoGenServiceProvider extends ServiceProvider
 
             // Publish config
             $this->publishes([
-                __DIR__ . '/../../config/autogen.php' => config_path('autogen.php'),
+                __DIR__ . '/../../config/autogen.php' => Config::get('autogen.php'),
             ], 'autogen');
         }
     }

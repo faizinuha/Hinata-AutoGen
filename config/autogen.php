@@ -8,3 +8,4 @@ return [
     'request_namespace' => 'App\\Http\\Requests',
     'resource_namespace' => 'App\\Http\\Resources',
 ];
+

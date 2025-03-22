@@ -1,7 +1,6 @@
 <?php
 
 namespace Hinata\HikariAutogen\Commands;
-// 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 
