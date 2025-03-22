@@ -1,0 +1,15 @@
+# These are supported funding model platforms
+
+github: [your-github-username]  # Ganti dengan username GitHub Sponsors kamu
+patreon: your-patreon-username  # Ganti dengan username Patreon kamu
+open_collective: your-opencollective-username  # Ganti dengan username Open Collective kamu
+ko_fi: your-ko-fi-username  # Ganti dengan username Ko-fi kamu
+tidelift: platform-name/package-name  # Ganti dengan nama platform dan package di Tidelift
+community_bridge: your-community-bridge-project  # Ganti dengan nama proyek Community Bridge kamu
+liberapay: your-liberapay-username  # Ganti dengan username Liberapay kamu
+issuehunt: your-issuehunt-username  # Ganti dengan username IssueHunt kamu
+lfx_crowdfunding: your-lfx-project  # Ganti dengan nama proyek LFX Crowdfunding kamu
+polar: your-polar-username  # Ganti dengan username Polar kamu
+buy_me_a_coffee: your-buymeacoffee-username  # Ganti dengan username Buy Me a Coffee kamu
+thanks_dev: your-thanksdev-username  # Ganti dengan username thanks.dev kamu
+custom: ['https://your-custom-sponsor-link1.com', 'https://your-custom-sponsor-link2.com']  # Ganti dengan URL sponsor kustom kamu
