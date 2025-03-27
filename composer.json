@@ -2,7 +2,7 @@
     "name": "hinata/hikari-autogen",
     "description": "Tools Easy Create File or Laravel",
     "type": "library",
-    "version": "v1.0.2",
+    "version": "v1.0.3",
     "homepage": "https://github.com/faizinuha/Hinata-AutoGen",
     "keywords": [
         "laravel",
