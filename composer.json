@@ -1,10 +1,30 @@
 {
-    "authors": [
+    "name": "hinata/hikari-autogen",
+    "description": "Tools Easy Create File or Laravel",
+    "type": "library",
+    "version": "v1.0.5",
+    "homepage": "https://github.com/faizinuha/Hinata-AutoGen",
+    "keywords": [
+        "laravel",
+        "autogen",
+        "file",
+        "create"
+    ],
+    "support": {
+        "issues": "https://github.com/faizinuha/Hinata-AutoGen/issues"
+    },
+    "repositories": [
         {
-            "name": "M-Zaky",
-            "role": "Developer"
+            "type": "vcs",
+            "url": "https://github.com/faizinuha/Hinata-AutoGen",
+            "options": {
+                "no-api": true
+            }
         }
     ],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Hinata\\HikariAutogen\\": "src/"
@@ -15,85 +35,58 @@
             "Tests\\": "tests/"
         }
     },
-    "config": {
-        "allow-plugins": {
-            "pestphp/pest-plugin": true,
-            "php-http/discovery": true
-        },
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "description": "Tools Easy Create File or Laravel",
-    "extra": {
-        "laravel": {
-            "providers": []
-        }
-    },
-    "homepage": "https://github.com/faizinuha/Hinata-AutoGen",
-    "keywords": [
-        "laravel",
-        "autogen",
-        "file",
-        "create"
-    ],
-    "license": "MIT",
-    "minimum-stability": "stable",
-    "name": "hinata/hikari-autogen",
-    "notifikasi": [
-        "notification.config",
-        "notification.log",
-        "notification.events"
-    ],
-    "prefer-lowest": false,
-    "prefer-stable": true,
-    "repositories": [
+    "authors": [
         {
-            "options": {
-                "no-api": true
-            },
-            "type": "vcs",
-            "url": "https://github.com/faizinuha/Hinata-AutoGen"
+            "name": "Zaky-D"
         }
     ],
+    "minimum-stability": "stable",
     "require": {
-        "illuminate/broadcasting": "^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
+        "php": "^7.4 || ^8.0",
+        "illuminate/support": "^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
+        "illuminate/filesystem": "^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
         "illuminate/console": "^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
         "illuminate/database": "^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
-        "illuminate/filesystem": "^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
         "illuminate/mail": "^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
-        "illuminate/support": "^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
-        "php": "^7.4 || ^8.0"
+        "illuminate/broadcasting": "^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.0",
-        "mockery/mockery": "^1.4",
-        "orchestra/testbench": "^6.0",
-        "pestphp/pest": "^1.0",
         "phpunit/phpunit": "^9.0 || ^10.0",
-        "squizlabs/php_codesniffer": "^3.0"
+        "mockery/mockery": "^1.4",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "squizlabs/php_codesniffer": "^3.0",
+        "pestphp/pest": "^1.0",
+        "orchestra/testbench": "^6.0"
     },
     "scripts": {
-        "fix": [
-            "php-cs-fixer fix src tests"
+        "test": [
+            "phpunit"
         ],
         "lint": [
             "phpcs --standard=PSR12 src tests"
+        ],
+        "fix": [
+            "php-cs-fixer fix src tests"
         ],
         "post-install-cmd": [
             "cp -r vendor/hinata/hikari-autogen/config/autogen.php config/"
         ],
         "post-update-cmd": [
             "cp -r vendor/hinata/hikari-autogen/config/autogen.php config/"
-        ],
-        "test": [
-            "phpunit"
         ]
     },
-    "support": {
-        "issues": "https://github.com/faizinuha/Hinata-AutoGen/issues"
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
     },
-    "type": "library",
-    "version": "v1.0.4",
-    "homepage": "https://github.com/faizinuha/Hinata-AutoGen" 
+    "extra": {
+        "laravel": {
+            "providers": []
+        }
+    }
 }
