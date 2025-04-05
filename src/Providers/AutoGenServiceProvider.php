@@ -23,7 +23,7 @@ class AutoGenServiceProvider extends ServiceProvider
 
             // Publish config
             $this->publishes([
-                __DIR__ . '/config/autogen.php' => config_path('autogen.php'),
+                __DIR__ .  '/../../config/autogen.php' => config_path('autogen.php'),
             ], 'autogen');
         }
     }
