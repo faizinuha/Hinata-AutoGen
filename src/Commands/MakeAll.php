@@ -1,6 +1,5 @@
 <?php
-
-namespace Hinata\HikariAutogen\Commands;
+namespace Hinata\AutoGenerator\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
@@ -15,6 +14,21 @@ class MakeAll extends Command
     {
         $name = ucfirst($this->argument('name'));
         $isApi = $this->option('api');
+
+        // Mulai spinner loading
+        $spinner = ['|', '/', '-', '\\'];
+        $spinIndex = 0;
+        $loading = true;
+        // Jalankan spinner di background
+        $spinnerPid = pcntl_fork();
+        if ($spinnerPid == 0) {
+            while ($loading) {
+                echo "\r" . $spinner[$spinIndex % 4] . "  Membuat resources untuk: $name...";
+                usleep(100000);
+                $spinIndex++;
+            }
+            exit(0);
+        }
 
         $this->info("🔨 Membuat resources untuk: $name...");
 
@@ -69,6 +83,12 @@ class MakeAll extends Command
             Artisan::call("make:controller {$name}Controller --resource");
             $this->info("✅ Controller {$name}Controller berhasil dibuat!");
         }
+
+        // Stop spinner loading
+        $loading = false;
+        $status = null;
+        pcntl_wait($status); // Tunggu spinner selesai
+        echo "\r"; // Bersihkan baris spinner
 
         $this->info("🎉 Semua resources untuk $name telah berhasil dibuat!");
     }
