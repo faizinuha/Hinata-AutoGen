@@ -10,7 +10,6 @@
       "Hinata\\AutoGenerator\\": "src/"
     }
   },
-  "version": "1.0.6",
   "autoload-dev": {
     "psr-4": {
       "Tests\\": "tests/"

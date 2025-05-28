@@ -47,3 +47,6 @@ Pesan validasi dalam bahasa Indonesia akan otomatis ditambahkan ke Form Request,
 
 ## ❓ Masalah atau Saran
 Jika ada masalah atau saran, silakan klik [di sini](https://github.com/faizinuha/Hinata-AutoGen/issues/1).
+
+
+--Happy Cooding
